@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading{
+    background-color: rgb(38, 173, 218);
+    width: 100vw;
+    height: 20vh;
+    
+   
+}
+marquee{
+  position: absolute;
+  
+  left: 10%;
+  right: 10%;
+  top: 5%;
+  font-size: 4rem;
+  color: white;
+}
+
+
+
+  
+.container{
+  background-image: url("./background.jpg");  
+  background-repeat: no-repeat;
+ background-size: cover;
+    width: 100vw;
+    height: 200vh;
+  }
+  
+  
+  .object {
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY( 470px );
+  }
+
+  .p-orbit, #m-orbit{
+    border: 0.6px solid lightgrey;
+    opacity: 0.5;
+    background: transparent;
+  }
+ 
+  
+  #m-orbit {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .planet, #moon {
+    z-index: 100;
+  }
+  
+  #sun {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #moon {
+    height: 6px;
+    width: 6px;
+    background-color: white;
+  }
+  
+  #mercury {
+    height: 13px;
+    width: 13px;
+  }
+  
+  #venus {
+    height: 30px;
+    width: 30px;
+  }
+  
+  #earth {
+    height: 24px;
+    width: 24px;
+  }
+  
+  #mars {
+    height: 30px;
+    width: 30px;
+  }
+  
+  #jupiter {
+    height: 50px;
+    width: 50px;
+    border-radius: 0%;
+  }
+  
+  #saturn {
+    height: 80px;
+    width: 70px;
+   
+  }
+   
+  
+  #uranus {
+    height: 30px;
+    width: 30px;
+  }
+  
+  #neptune {
+    height: 25px;
+    width: 25px;
+  }
+ .rocket{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 1s;
+ }
+ @keyframes anim {
+ to{
+  transform: translateY(-100%);
+ }
+ 
+}
+ .rocket img{
+  width: 100px;
+  height: 200px;
+  border-radius: 80%;
+  background-color: skyblue ;
+
+ }
